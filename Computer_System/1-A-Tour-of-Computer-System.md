@@ -61,3 +61,8 @@ shell程序通过一系列的指令将可执行文件的从磁盘读入内存当
 为了解决这种差距，系统的设计师使用了高速缓存，一种更小，更快的存储设备，作为暂时的集结区域，存放处理器近期可能需要使用的信息。下图展示了高速缓存在计算机系统里扮演的角色 : 
 ![Computer_System_Figure_1.8_Cache_memories](https://winteryangwt-1256492362.cos.ap-chengdu.myqcloud.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/Computer_System_Figure_1.8_Cache_memories.png)
 这样系统就可以获得了一个较大，访问速度快的存储器。让高速缓存存放可能经常需要的数据，在内存中完成的操作都可以在更快的高速缓存内完成。
+
+有了加入缓存的思想后，我们就可以对计算机的存储设备进行层次性划分。这个划分如下图 : 
+![Computer_System_Figure_1.9_Hierarchy_of_memories](https://winteryangwt-1256492362.cos.ap-chengdu.myqcloud.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/Computer_System_Figure_1.9_Hierarchy_of_memories.png)
+在这张图里，每一层都是下面一层的缓存。理解了存储设备的层次化，程序员就可以利用缓存来提高程序的性能。
+<br/>
